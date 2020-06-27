@@ -1,0 +1,7 @@
+<% @cocktails.each do |cocktail| %>
+      <tr>
+        <td><%= cocktail.name %></td>
+        <td><%= link_to 'Show', cocktail %></td>
+      </tr>
+    <% end %>
+        <td><%= link_to 'Add new', new_cocktail_path %></td>
